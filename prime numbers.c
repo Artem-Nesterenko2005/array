@@ -8,6 +8,7 @@ int main()
 	int symbolNumber = 0;
 	int counter = 0;
 	srand(time(0));
+	printf("Array numbers - ");
 	for (symbolNumber; symbolNumber < 5; symbolNumber++)
 	{
 		array[symbolNumber] = rand() % 3;
@@ -19,5 +20,5 @@ int main()
 		if (array[symbolNumber] == 0)
 			counter = counter + 1;
 	}
-	printf("\n%d", counter);
+	printf("\nNumber of zeroes - %d", counter);
 }
